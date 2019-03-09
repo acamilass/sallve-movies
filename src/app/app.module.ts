@@ -9,6 +9,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './home/home.module';
 import { SearchModule } from './search/search.module';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { SearchModule } from './search/search.module';
     AppRoutingModule,
     NoopAnimationsModule,
     HomeModule,
-    SearchModule
+    SearchModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
