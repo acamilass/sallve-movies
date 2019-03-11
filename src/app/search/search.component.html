@@ -1,8 +1,9 @@
 <div class="container">
-  
   <div class="header">
     <h1 class="header__title">Movie Title</h1>
-    <button mat-raised-button class="header__btn">Back</button>
+    <button mat-raised-button class="header__btn">
+      <a routerLink="">Back</a>
+    </button>
   </div>
 
   <div class="header-secondary">
@@ -11,20 +12,57 @@
   </div>
 
   <div class="movie-content">
-
-    <img 
+    <img
       class="movie-content__poster"
       src="https://i.pinimg.com/originals/a0/69/ea/a069ea1e06924d36b5d475ddef62ba2a.jpg"
       alt="Movie poster"
     />
 
     <div class="movie-content__info">
-      <p>Plot: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab, adipisci consequuntur pariatur esse nihil temporibus quisquam, distinctio voluptate eaque.</p>
-      <p>Actors: </p>
-      <p>Director: </p>
-      <p>Writer: </p>
+      <p class="movie-content__info--paragraph">
+        <span class="title">Plot: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab,
+        adipisci consequuntur pariatur esse nihil temporibus quisquam,
+        distinctio voluptate eaque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quibusdam minus nihil id quia quasi reiciendis quod
+        modi officiis, placeat rem dolorem corporis! Necessitatibus adipisci
+        assumenda autem soluta delectus non accusamus.
+      </p>
+      <p class="movie-content__info--paragraph">
+        <span class="title">Actors: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic et
+        cumque ipsam amet molestias ex ipsa sunt esse eum magnam quo autem
+        quisquam quae quam, temporibus harum, sapiente a qui!
+      </p>
+      <p class="movie-content__info--paragraph">
+        <span class="title">Director: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+      <p class="movie-content__info--paragraph">
+        <span class="title">Writer: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
     </div>
-    
+
+    <div class="movie-content__ratings">
+      <h2 class="ratings__header">Ratings</h2>
+      <h3 class="ratings__source">Source 1</h3>
+      <div class="ratings__stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+
+      <h3 class="ratings__source">Source 2</h3>
+      <div class="ratings__stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+    </div>
+
+    <button mat-raised-button class="header__btn--mobile">
+      <a routerLink="">Back</a>
+    </button>
   </div>
-  
 </div>
