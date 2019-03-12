@@ -1,27 +1,36 @@
-# SallveMovies
+# Sallve Movies App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+O teste consiste em criar uma aplicação web com navegação simples para pesquisa de filmes usando a [OMDb API](http://www.omdbapi.com/).
 
-## Development server
+### Metodologia 
+> **Padrão:** Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+> **Frameworks:** Angular, Angular Material
 
-## Code scaffolding
+> **Instalação de pacotes:** npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> **Desenvolvedor:** Ana Camila Santos Sousa
 
-## Build
+>  **Método de Desenvolvimento:**  A estrutura do projeto foi criada com a ferramenta [angular-cli](https://github.com/angular/angular-cli). Para o front end foi utilizado o framework [Angular Material](https://material.angular.io/). Para hospedar a página na web foi usado o [Firebase](https://firebase.google.com/?hl=pt-br).
+ 
+### Link do projeto
+O projeto também foi hospedado na web usando o Firebase para uma visualização mais rápida. 
+>> 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Deploy do projeto
+O projeto também pode ser clonado através do seu repositório e assim ser visualizado localmente.
 
-## Running unit tests
+**Requisitos:** A ferramenta Node deve estar instalada
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##### Passos
 
-## Running end-to-end tests
+Através do terminal clone o projeto
+>> git clone 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Na pasta sallve-movies baixe os pacotes
+>> npm install
 
-## Further help
+Para executar localmente use o seguinte comando
+>> npm start
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Agora você pode testar a sua aplicação através do endereço [http://localhost:4200](http://localhost:4200)
