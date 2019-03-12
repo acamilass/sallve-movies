@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,10 @@ import { HomeModule } from './home/home.module';
 import { SearchModule } from './search/search.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+
+import { MoviesService } from './services/movies.service';
+
 
 
 @NgModule({
@@ -26,9 +31,13 @@ import { MatButtonModule } from '@angular/material/button';
     HomeModule,
     SearchModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    MoviesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

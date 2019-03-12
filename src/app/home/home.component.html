@@ -4,10 +4,8 @@
     <h1 class="heading-primary">Sallve Movies</h1>
 
     <div class="search-form">
-     
-      <input class="search-form__input" placeholder="Find a movie" autocomplete="off">
-      
-      <button mat-raised-button class="search-form__btn">Search</button>
+      <input class="search-form__input" placeholder="Find a movie" autocomplete="off" [(ngModel)]="title">
+      <button mat-raised-button class="search-form__btn" (click)="searchMovie(title)">Search</button>
     </div>
   </div>
   
