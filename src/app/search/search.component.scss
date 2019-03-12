@@ -34,15 +34,11 @@ $bp-smallest: 31.25em; // 500px
     &__btn {
         font-family: inherit;
         font-size: 1.6rem;
+        color: $yellow;
         background-color: $purple;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: 600;
-
-        a {
-            color: $yellow;
-            text-decoration: none;
-        }
 
         @media only screen and (max-width: $bp-medium) {
             display: none;
@@ -53,15 +49,11 @@ $bp-smallest: 31.25em; // 500px
         display: none;
         font-family: inherit;
         font-size: 1.6rem;
+        color: $yellow;
         background-color: $purple;
         text-transform: uppercase;
         letter-spacing: 0.1rem;
         font-weight: 600;
-
-        a {
-            color: $yellow;
-            text-decoration: none;
-        }
 
         @media only screen and (max-width: $bp-medium) {
             display: flex;
