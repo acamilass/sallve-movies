@@ -68,6 +68,10 @@ $bp-smallest: 31.25em; // 500px
     align-items: center;
     margin-bottom: 4rem;
 
+    &__title {
+        margin-bottom: 1rem;
+    }
+
     @media only screen and (max-width: $bp-medium) {
         flex-direction: column;
     }

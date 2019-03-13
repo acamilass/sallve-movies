@@ -1,44 +1,37 @@
 <div class="container">
   <div class="header">
-    <h1 class="header__title">Movie Title</h1>
+    <h1 class="header__title">{{ payload?.Title }}</h1>
     <button mat-raised-button class="header__btn" routerLink="">Back</button>
   </div>
 
   <div class="header-secondary">
-    <h2 class="header-secondary__title">Release date - Genre</h2>
-    <h2 class="header-secondary__awards">Awards</h2>
+    <h2 class="header-secondary__title">{{ payload?.Released }} - {{ payload?.Genre }}</h2>
+    <h2 class="header-secondary__awards">{{ payload?.Awards }}</h2>
   </div>
 
   <div class="movie-content">
     <img
       class="movie-content__poster"
-      src="https://i.pinimg.com/originals/a0/69/ea/a069ea1e06924d36b5d475ddef62ba2a.jpg"
+      src="{{ payload?.Poster }}"
       alt="Movie poster"
     />
 
     <div class="movie-content__info">
       <p class="movie-content__info--paragraph">
-        <span class="title">Plot: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ab,
-        adipisci consequuntur pariatur esse nihil temporibus quisquam,
-        distinctio voluptate eaque. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quibusdam minus nihil id quia quasi reiciendis quod
-        modi officiis, placeat rem dolorem corporis! Necessitatibus adipisci
-        assumenda autem soluta delectus non accusamus.
+        <span class="title">Plot: </span> {{ payload?.Plot }}
       </p>
       <p class="movie-content__info--paragraph">
-        <span class="title">Actors: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic et
-        cumque ipsam amet molestias ex ipsa sunt esse eum magnam quo autem
-        quisquam quae quam, temporibus harum, sapiente a qui!
+        <span class="title">Actors: </span> {{ payload?.Actors }}
       </p>
       <p class="movie-content__info--paragraph">
-        <span class="title">Director: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span class="title">Director: </span> {{ payload?.Director }}
       </p>
       <p class="movie-content__info--paragraph">
-        <span class="title">Writer: </span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <span class="title">Writer: </span> {{ payload?.Writer }}
       </p>
     </div>
 
-    <div class="movie-content__ratings">
+    <!-- <div class="movie-content__ratings">
       <h2 class="ratings__header">Ratings</h2>
       <h3 class="ratings__source">Source 1</h3>
       <div class="ratings__stars">
@@ -57,7 +50,7 @@
         <i class="fas fa-star"></i>
         <i class="far fa-star"></i>
       </div>
-    </div>
+    </div> -->
 
     <button mat-raised-button class="header__btn--mobile" routerLink="">Back</button>
   </div>

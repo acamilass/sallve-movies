@@ -15,6 +15,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 
 import { MoviesService } from './services/movies.service';
+import { MovieEffects } from './store/effects/movie.effect';
+import { movieReducer } from './store/reducers/movie.reducer';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 
 
 
@@ -33,7 +37,9 @@ import { MoviesService } from './services/movies.service';
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({ movie: movieReducer }),
+    EffectsModule.forRoot([MovieEffects])
   ],
   providers: [
     MoviesService

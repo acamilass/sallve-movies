@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../services/movies.service';
+import { Store } from '@ngrx/store';
+import { SearchMovie } from '../store/actions/movie.action';
 
 @Component({
   selector: 'app-home',
@@ -8,18 +10,12 @@ import { MoviesService } from '../services/movies.service';
 })
 export class HomeComponent implements OnInit {
 
-  title: string;
-  result: object;
 
   searchMovie(title: string) {
-    this.moviesService.searchMovieByTitle(title)
-      .subscribe((result) => {
-        this.result = result;
-        console.log(result);
-      });
+    this.store.dispatch(new SearchMovie(title));
   }
 
-  constructor(private moviesService: MoviesService) { }
+  constructor(private moviesService: MoviesService, private store: Store<any>) { }
 
   ngOnInit() {
   }
