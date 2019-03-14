@@ -1,6 +1,6 @@
 # Sallve Movies App
 
-O teste consiste em criar uma aplicação web com navegação simples para pesquisa de filmes usando a [OMDb API](http://www.omdbapi.com/).
+O teste consiste em criar uma aplicação web com navegação simples para pesquisa de filmes usando a [API OMDb](http://www.omdbapi.com/).
 
 ### Metodologia 
 > **Padrão:** Angular
@@ -15,7 +15,7 @@ O teste consiste em criar uma aplicação web com navegação simples para pesqu
  
 ### Link do projeto
 O projeto também foi hospedado na web usando o Firebase para uma visualização mais rápida. 
->> 
+>> https://sallvemovies.firebaseapp.com/
 
 ### Deploy do projeto
 O projeto também pode ser clonado através do seu repositório e assim ser visualizado localmente.
@@ -25,7 +25,7 @@ O projeto também pode ser clonado através do seu repositório e assim ser visu
 ##### Passos
 
 Através do terminal clone o projeto
->> git clone 
+>> git clone https://github.com/acamilass/sallve-movies.git
 
 Na pasta sallve-movies baixe os pacotes
 >> npm install
