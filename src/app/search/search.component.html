@@ -29,28 +29,29 @@
       <p class="movie-content__info--paragraph">
         <span class="title">Writer: </span> {{ payload?.Writer }}
       </p>
-    </div>
 
-    <!-- <div class="movie-content__ratings">
       <h2 class="ratings__header">Ratings</h2>
-      <h3 class="ratings__source">Source 1</h3>
-      <div class="ratings__stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
-        <i class="far fa-star"></i>
+      <div class="movie-content__ratings">
+        <div class="ratings__stars">
+          <h3 class="ratings__source">{{ payload?.Ratings[1]?.Source }}</h3>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+
+        <div class="ratings__stars">
+          <h3 class="ratings__source">{{ payload?.Ratings[2]?.Source }}</h3>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
       </div>
 
-      <h3 class="ratings__source">Source 2</h3>
-      <div class="ratings__stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
-      </div>
-    </div> -->
+    </div>    
 
     <button mat-raised-button class="header__btn--mobile" routerLink="">Back</button>
   </div>

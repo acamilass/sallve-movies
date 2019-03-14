@@ -30,7 +30,7 @@ export class SearchComponent implements OnInit {
     this.store.select('movie').subscribe((state: MovieState) => {
       this.payload = state.payload;
 
-      // console.log(state.payload);
+      console.log(state.payload);
       // console.log('state complete');
     });
   }

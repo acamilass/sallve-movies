@@ -104,7 +104,7 @@ $bp-smallest: 31.25em; // 500px
 
     &__info {
         max-width: 70rem;
-        max-height: 30rem;
+        // max-height: 30rem;
 
         @media only screen and (max-width: $bp-medium) {
             margin: 3rem 4rem;
@@ -123,11 +123,37 @@ $bp-smallest: 31.25em; // 500px
     &__ratings {
         display: flex;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        margin-left: 12rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 3rem;
+            margin-left: 6rem;
+        }
 
         i {
             font-size: 3rem;
         }
+    }
+
+    .ratings {
+        &__header {
+            font-size: 1.9rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        &__source {
+            font-size: 1.6rem;
+            margin: 0 0 1rem 0;
+            text-align: center;
+        }
+
+        &__stars {
+            
+            margin: 0 3rem;
+        }
+        
     }
 }
 
