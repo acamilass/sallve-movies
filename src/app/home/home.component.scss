@@ -17,6 +17,10 @@ $bp-smallest: 31.25em; // 500px
         left: 50%;
         transform: translate(-50%, -60%);
         text-align: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            left: 52%;
+        }
     }
 
     .heading-primary {
@@ -61,6 +65,12 @@ $bp-smallest: 31.25em; // 500px
             color: $yellow;
             letter-spacing: .1rem;
             font-weight: 600;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.8rem;
+                height: 5rem;
+                width: 12rem;
+            }
         }
     }
 }
