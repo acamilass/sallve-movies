@@ -131,6 +131,10 @@ $bp-smallest: 31.25em; // 500px
             margin-left: 6rem;
         }
 
+        @media only screen and (max-width: $bp-small) {
+            margin-left: 2rem;
+        }
+
         i {
             font-size: 3rem;
         }
@@ -150,8 +154,11 @@ $bp-smallest: 31.25em; // 500px
         }
 
         &__stars {
-            
             margin: 0 3rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin: 0 .75rem;
+            }
         }
         
     }
