@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class MoviesService {
 
   searchMovieByTitle(title: string) {
-    const url = 'http://www.omdbapi.com/?t=' + title + '&apikey=8b3123eb';
+    const url = 'https://www.omdbapi.com/?t=' + title + '&apikey=8b3123eb';
     return this.http.get(url);
   }
 

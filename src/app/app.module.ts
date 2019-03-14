@@ -13,14 +13,12 @@ import { SearchModule } from './search/search.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 
 import { MoviesService } from './services/movies.service';
 import { MovieEffects } from './store/effects/movie.effect';
 import { movieReducer } from './store/reducers/movie.reducer';
-import { EffectsModule } from '@ngrx/effects';
-import { StoreModule } from '@ngrx/store';
-
-
 
 @NgModule({
   declarations: [

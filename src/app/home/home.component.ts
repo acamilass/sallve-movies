@@ -10,6 +10,7 @@ import { SearchMovie } from '../store/actions/movie.action';
 })
 export class HomeComponent implements OnInit {
 
+  title: string;
 
   searchMovie(title: string) {
     this.store.dispatch(new SearchMovie(title));
